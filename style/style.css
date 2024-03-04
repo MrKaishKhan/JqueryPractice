@@ -1,3 +1,4 @@
+/* index.... css */
 .top {
     display: flex;
     gap: 20px;
@@ -12,4 +13,19 @@
 
 .sec {
     background-color: bisque;
+}
+
+/* selector css */
+
+.box{
+    border: solid 1px black;
+}
+
+
+/* selector css */
+
+.top-01{
+    background-color: blueviolet;
+    padding: 10px;
+    border: 1px solid blue;
 }
