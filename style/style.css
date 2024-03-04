@@ -1,0 +1,15 @@
+.top {
+    display: flex;
+    gap: 20px;
+
+}
+
+
+.first {
+    background-color: aquamarine;
+
+}
+
+.sec {
+    background-color: bisque;
+}
