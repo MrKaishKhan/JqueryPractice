@@ -50,6 +50,16 @@ $(document).ready(function(){
  
  // *********** 04 selector ***************
  // keyboard events file****************
+ $(document).ready(function(){
+    $("body").keypress(function(){
+        $(this).css("background-color", "purple")
+    })
+
+
+    $("body").keyup(function(){
+        $(this).css("background-color", "lightblue")
+    })
+ })
 
 
 
