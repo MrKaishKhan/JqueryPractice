@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+   
+    <h1> This is me and me ?</h1>
+    <form action="" class="fi">
+
+        <div class="form">
+            <div class="for">
+            
+                <h1>Form ME? </h1>
+                <label for="">Name</label>
+                <input type="text" id="name">
+        <br>
+        <label for=""  >Class</label>
+                <input type="text" id="class">
+<br>
+        <label for="" >Country</label>
+        <input type="text" id="count">
+        <br>
+        <select  ">
+            <option value="india">India</option>
+            <option value="usa">Usa</option>
+            <option value="kae">Lake</option>
+        </select>
+        </div>
+    </div>
+    <input type="submit">
+    </form>
+    <div class="test"></div>
+
+
+    <script>
+   $(document).ready(function(){
+    $('#name , #class , #count').focus(function(){
+    $(this).css('background-color','yellow');
+    })
+
+    
+    // blur and focus
+    $('#name , #class , #count').blur(function(){
+    $(this).css('background-color','');
+    })
+
+    //select
+    $('#name , #class  ').select(function () {
+           $(this).css('background-color', 'purple');
+       })
+    
+    // 
+
+    // submit event
+       $('.fi').submit(function () {
+        //    $(this).css('background-color', 'purple');
+        alert("hjh")
+       })
+    
+
+
+   });
+    </script>
+
+</body>
+
+</html>
