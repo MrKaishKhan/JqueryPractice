@@ -11,6 +11,14 @@
     .first{
         border:1px solid black;
     }
+
+    .first{
+      background-color: blue;
+    }
+ 
+    .second{
+    background-color: blueviolet;
+    }
 </style>
 </head>
 
@@ -19,19 +27,37 @@
     <div id="top">
         <h1> This is me and me ?</h1>
        <p> This I !</p>
-        <div class="first">
+        <div class="firsddt">
             <h1>Text Box 1</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, modi omnis numquam perspiciatis eius
                 debitis?</p>
         </div>
     </div>
     <button  id="click">submit</button>
+    <button  id="remove">remove</button>
+    <button  id="toggle">toggle</button>
 
      <script>
-        $(document).ready(function(){
-            $("#click").click(function(){
-                $(".first h1").text("Cool huh")
+
+          // add class
+           $("#click").click(function(){
+            $("#top").addClass("first");
+           
+            //remove class
+            $("#remove").click(function(){
+                $("#top").removeClass("first")
             })
+
+            $("#toggle").click(function(){
+                $(".firsddt").toggleClass("second")
+            })
+             
+            //toggle
+            // $(document).ready(function(){
+            //     $("button").click(function(){
+            //     $("#top").toggleClass("blueviolet")
+            //     })
+            // })
         });
      </script>
 </body>
