@@ -13,27 +13,22 @@
     height: 200px;
     width: 70%;
     }
-
+ 
 </style>
 </head>
 
 <h1>THis si is?</h1>
-<div class="box">
+<div class="box" id="cox">
     <h1>DFJDKF</h1>
-    <p>
-        
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis ad officia sint nihil quam porro aut explicabo error consequuntur laudantium, id, voluptates cupiditate deleniti dolores nam, maxime repellendus! Porro.
-         isicing elit. Aliquam ab dolores dolore sed delectus officia cumque necessitatibus quae quos fugiat incidunt, blanditiis, nam voluptatem repellendus esse id, facere ratione quibusdam. 
- 
-</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis ad officia sint nihil quam porro aut explicabo error consequuntur laudantium, id, voluptates cupiditate deleniti dolores nam, maxime repellendus! Porro.isicing elit. <span>This is me !</span>Aliquam ab dolores dolore sed delectus officia cumque necessitatibus quae quos fugiat incidunt, blanditiis, nam voluptatem repellendus esse id, facere ratione quibusdam.</p>
 </div>
 <body>
     <script>
         $(document).ready(function(){
-            $(".box").scroll(function(){
-              console.log("Scroll")   
+            let a = $(".box p").text();
+              console.log(a)   
             })
-        });
+        
     </script>
 
 </body>
