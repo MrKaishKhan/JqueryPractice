@@ -13,6 +13,11 @@
 .mouse{
     border: 1px solid rgb(136, 99, 171);
 }
+
+.violet{
+
+    background-color :blueviolet;
+}
 </style>
 
 </head>
@@ -27,12 +32,24 @@
         </div>
         <!-- <button class="box">Add Style</button> -->
         
-    
+     <button> remove</button>
     <script>
    $(document).ready(function(){
-     $(".mouse").on("click", function(){
-        (this).css("background" , "blueviolet")
-     })
+     $(".mouse").on({
+            "mouseover" : function(){
+            $(this).css("background" , "yellow")
+     },
+        "click" : function(){
+            $(this).css("background" , "red")
+        },
+        "mouseout" : function(){
+            $(this).css("background" , "green")
+   }
+});
+
+       $("button").click(function(){
+        $(".mouse").off("mouseout ,mouseover")
+       })
    })
 
     </script>
