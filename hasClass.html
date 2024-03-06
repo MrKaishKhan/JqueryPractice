@@ -11,28 +11,25 @@
 <head>
 <style>
 
-.bvo{
+.box2{
+
  background-color: blueviolet;
 }
 
 </style>
 </head>
- <div class="bvo">
-    <h2>Tesf</h2>
+ <div class="box2" id="box">
+    <h2>Tesf</h2> 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia at sed porro.</p>
 
  </div>
 <button class="first">empty</button>
-<button class="sec">Remoe</button>
-<button></button>
+
  
 <script>
     $(document).ready(function(){
-        $('.first').click(function(){
-            $(".bvo").empty();
-        });
-        $('.sec').click(function(){
-            $(".bvo").remove();
+        $(".first").click(function(){
+        console.log($("#box").hasClass(".box2"));
         })
     })
 </script>
