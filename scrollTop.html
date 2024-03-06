@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body style="width: 600px;"> 
+
+    <h1> This is me and me ?</h1>
+   <div class="" style="display: flex; gap: 10px;">
+    <button class="top">ScrollTop</button> 
+    <button class="left">ScrollLeft</button>
+</div>
+    
+    
+ 
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore ut nobis accusamus similique, consequatur fugit dolorum praesentium dolorem quod aliquid ullam vero cupiditate voluptas fugiat aperiam officia distinctio ipsum assumenda.
+    Pariatur, maxime. Accusantium cupiditate ea minus laborum, possimus veniam repellendus odio inventore quae saepe eos optio excepturi, soluta sint, autem magnam tempore. Possimus, impedit deserunt. Aut itaque accusantium eum doloremque.
+    Esse rerum enim delectus, vel porro, asperiores possimus deserunt soluta similique quod voluptate, assumenda provident alias repellat laboriosam fugit cumque sequi ipsum sapiente obcaecati. Dignissimos minima eligendi impedit dolores delectus!
+    Modi possimus quasi, pariatur illum molestiae deserunt suscipit aliquam adipisci quo assumenda? Pariatur saepe, eveniet optio quia similique ratione officiis iure doloribus deserunt tempore enim tempora ex, alias, nulla nihil.
+    Incidunt minima enim similique repellendus nesciunt, iure ipsa quo omnis nemo? Perspiciatis illo assumenda nulla quaerat quibusdam dolorum labore tempore error facilis, atque, aliquam inventore ipsam est odio, omnis sapiente.
+    Pariatur nesciunt quas natus illum quae deleniti, animi exercitationem, ducimus beatae aliquid, voluptatum laboriosam optio accusamus vero. Officia fuga placeat aspernatur soluta laborum ullam, nostrum dignissimos reprehenderit illo quisquam ratione?
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio tempora fugit illum consectetur numquam placeat deleniti, ea voluptate eligendi eveniet illo ullam consequuntur quaerat officiis, voluptates eum, ipsam quo nisi!
+    Ipsum aspernatur, dicta ducimus laboriosam cum necessitatibus, error officiis ullam inventore recusandae natus voluptas non soluta eveniet molestias? Pariatur qui laudantium praesentium minus totam magnam cumque ratione, dignissimos repellat autem?
+    Labore aperiam excepturi aspernatur tempora, maxime veniam eligendi, assumenda consequuntur inventore optio hic dolor obcaecati fugit. Provident dolore animi laudantium dolorum pariatur cum. Possimus error reprehenderit nesciunt sunt architecto maiores?
+    Ullam et sapiente, porro cum repudiandae vitae iste quasi doloremque repellendus dolor quibusdam dicta, asperiores maiores sunt consequuntur quisquam qui suscipit, enim optio deleniti nihil alias aliquam a ad. Eligendi.
+    Dolores architecto temporibus, porro asperiores blanditiis earum laboriosam harum ullam voluptas obcaecati explicabo numquam cupiditate et error? Quidem doloremque quibusdam molestiae ipsam. Cum provident ex quaerat, quidem beatae unde corrupti.
+    Facilis reprehenderit nihil architecto cum sunt enim adipisci consequuntur, commodi aliquid quaerat praesentium. Repellat, modi perferendis amet quis ipsum et velit officia illum fugiat recusandae dicta iste ipsam at adipisci.
+    Magnam nostrum eveniet velit aspernatur iure labore, alias non dolorem sed reiciendis odit accusamus atque consectetur delectus accusantium vero laudantium, ut voluptatibus nulla obcaecati commodi! Laudantium reiciendis ipsa harum nesciunt?
+    Accusantium facilis quos eum, cum dolorum libero nisi dolorem suscipit mollitia repellendus nostrum, recusandae sed nobis illo necessitatibus doloribus officiis possimus tempora et quidem unde ipsam aut ratione. Veritatis, id?
+    A voluptates perspiciatis facilis consequatur deserunt sed reprehenderit cum quisquam incidunt odio libero cumque rem nemo excepturi provident amet quo doloremque debitis assumenda saepe temporibus, impedit maiores ut praesentium. Quae!
+</p>
+<div class="box" style="background-color: blueviolet; width:200px ; height: 50px ; position:fixed ; left: 100px; bottom: 390px;"></div>
+    <script >
+ 
+ $(document).ready(function(){
+    $(window).scroll(function(){
+        $(".box").html("");
+        $(".box").append("Top : " + $(window).scrollTop());
+        $(".box").append("<br>Left : " + $(window).scrollLeft());
+    
+    })
+
+    // Using button scroll top the 
+    $(".top").click(function(){
+        $(window).scrollTop(100);
+    })
+
+    // Using button scroll left the 
+    $(".left").click(function(){
+        $(window).scrollLeft(10);
+    })
+ })
+    </script>
+</body>
+
+</html>
