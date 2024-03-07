@@ -18,10 +18,9 @@
 
 </style>
 </head>
- <div class="box2" id="box">
-    <h2>Tesf</h2> 
+ <div class="box2" id="">
+    <h2 class="test">Tesf</h2> 
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia at sed porro.</p>
-
  </div>
 <button class="first">empty</button>
 
@@ -29,7 +28,14 @@
 <script>
     $(document).ready(function(){
         $(".first").click(function(){
-        console.log($("#box").hasClass(".box2"));
+        // console.log($("#box h2").hasClass("box2"));
+        let a = $("#box h2").hasClass("test")
+
+        if(a === true){
+            console.log("yes");
+        }else{
+            console.log("no");
+        }
         })
     })
 </script>
