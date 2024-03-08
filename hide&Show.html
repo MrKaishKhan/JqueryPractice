@@ -28,21 +28,16 @@
  
 <script>
     $(document).ready(function(){
-        $('.first').click(function(){
-            $(".bvo").empty();
-        });
-        $('.sec').click(function(){
-            $(".bvo").remove();
-        })
-
         $(".first").click(function(){
-            $(".box").hide();
+           let b = $(".box p").hide();
+           console.log(b); 
         })
 
         $(".sec").click(function(){
-            $(".box").show();
+            let  a = $(".box p").show();
+            console.log(a);
         })
-    })
+    });
 </script>
 <body>
 </body>
