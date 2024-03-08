@@ -24,17 +24,21 @@
  </div>
 <button class="first">hide</button>
 <button class="sec">show</button>
-<button></button>
+
  
 <script>
     $(document).ready(function(){
         $(".first").click(function(){
-           let b = $(".box p h2").hide();
+           let b = $(".box ").hide("fast"); 
+           // there a property which is called "slow" which can past in hide and show  u can use itt...
+           // there also a numeber you can use it .. 1000 = 1 sec 
+           // .hide(1000) like that
+           // .hide("slow") like that you can use ....
            console.log(b); 
         })
 
         $(".sec").click(function(){
-            let  a = $(".box p h2").show();
+            let  a = $(".box ").show("slow");
             console.log(a);
         })
     });
