@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+ 
+<head>
+<style>
+
+.bvo{
+ background-color: blueviolet;
+}
+
+</style>
+</head>
+ <div class="box">
+    <h2>Tesf</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia at sed porro.</p>
+
+ </div>
+<button class="first">hide</button>
+<button class="sec">show</button>
+<button></button>
+ 
+<script>
+    $(document).ready(function(){
+        $('.first').click(function(){
+            $(".bvo").empty();
+        });
+        $('.sec').click(function(){
+            $(".bvo").remove();
+        })
+
+        $(".first").click(function(){
+            $(".box").hide();
+        })
+
+        $(".sec").click(function(){
+            $(".box").show();
+        })
+    })
+</script>
+<body>
+</body>
+</html>
