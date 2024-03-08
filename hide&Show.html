@@ -24,6 +24,7 @@
  </div>
 <button class="first">hide</button>
 <button class="sec">show</button>
+<button class="toggle">toggle</button>
 
  
 <script>
@@ -32,7 +33,7 @@
            let b = $(".box ").hide("fast"); 
            // there a property which is called "slow" which can past in hide and show  u can use itt...
            // there also a numeber you can use it .. 1000 = 1 sec 
-           // .hide(1000) like that
+           // .hide(1000) like that  you can increase 1 3 4
            // .hide("slow") like that you can use ....
            console.log(b); 
         })
@@ -41,6 +42,12 @@
             let  a = $(".box ").show("slow");
             console.log(a);
         })
+        //toggle\
+        $(".toggle").click(function(){
+            $(".box").toggle(); 
+            console.log('togggle')
+        })
+
     });
 </script>
 <body>
