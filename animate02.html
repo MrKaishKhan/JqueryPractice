@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+ 
+<head>
+<style>
+
+.box{
+ background-color: blueviolet;
+ width: 100px;
+ height:100px;
+ /* margin:100px 100px 100px 100px ; */
+ position: relative;
+}
+
+</style>
+</head>
+ <div class="box">
+    <h2>Tesf</h2>
+
+ </div><br>
+<button class="first">Animate</button>
+<button class="stop">Stop</button>
+ 
+
+<script>
+     
+    $(document).ready(function(){
+        $(".first").click(function(){
+           $(".box").animate({left :"300px"},2000)
+           $(".box").animate({fontSize :"30px"},2000)
+        });
+
+        $(".stop").click(function(){
+            $(".box").stop(true) //(true , true) it will go instantly last 
+        })
+    
+    });
+</script>
+<body>
+</body>
+</html> 
