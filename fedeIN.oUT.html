@@ -21,7 +21,7 @@
     <h2>Tesf</h2>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia at sed porro.</p>
 
- </div>
+ </div><br>
 <button class="first">FadeOut</button>
 <button class="sec">FadeIN</button>
 <button class="toggle">Fadetoggle</button>
@@ -30,12 +30,12 @@
 <script>
     $(document).ready(function(){
         $(".first").click(function(){
-            $(".box").fadeOut();
+            $(".box").fadeOut(1000);
             console.log("fadeOUT")
         });
         
         $(".sec").click(function(){
-            $("box").fadeIn();
+            $(".box").fadeIn(1000);
             console.log("fadeIn")
         })
 
