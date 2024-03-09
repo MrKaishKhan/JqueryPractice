@@ -11,39 +11,33 @@
 <head>
 <style>
 
-.bvo{
+.box{
  background-color: blueviolet;
+ width: 100px;
+ height:100px;
+ /* margin:100px 100px 100px 100px ; */
 }
 
 </style>
 </head>
  <div class="box">
     <h2>Tesf</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia at sed porro.</p>
 
  </div><br>
-<button class="first">slideDown</button>
-<button class="sec">slideUp</button>
-<button class="toggle">slidetoggle</button>
-
+<button class="first">FadeOut</button>
  
+
 <script>
+    // before the first transition you need to know the animation method what is this 
+    // $(selector).animate({params},speed,callback);
+     //                    hear you give the params like this 
+    //                    paddingLaft  like the react js camel cases 
     $(document).ready(function(){
         $(".first").click(function(){
-            $(".box").slideDown(1000);
+            $(".box").fadeOut(1000);
             console.log("fadeOUT")
         });
-        
-        $(".sec").click(function(){
-            $(".box").slideUp(1000);
-            console.log("fadeIn")
-        })
-
-        $(".toggle").click(function(){
-            $(".box").slideToggle();
-           console.log("tOGGLE up")
-        })
-        
+    
     });
 </script>
 <body>
