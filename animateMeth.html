@@ -16,6 +16,7 @@
  width: 100px;
  height:100px;
  /* margin:100px 100px 100px 100px ; */
+ position: relative;
 }
 
 </style>
@@ -24,7 +25,7 @@
     <h2>Tesf</h2>
 
  </div><br>
-<button class="first">FadeOut</button>
+<button class="first">Animate</button>
  
 
 <script>
@@ -34,8 +35,24 @@
     //                    paddingLaft  like the react js camel cases 
     $(document).ready(function(){
         $(".first").click(function(){
-            $(".box").fadeOut(1000);
-            console.log("fadeOUT")
+            $(".box").animate({
+                // you can add css properties what ever you want too...
+                left :"150px"},"slow")
+            $(".box").animate({
+                // you can add css properties what ever you want too...
+                
+                top:"150px",
+                
+
+            })
+            $(".box").animate({
+                // you can add css properties what ever you want too...
+              
+                width:"100px",
+                
+
+            })
+            console.log("This is animate")
         });
     
     });
