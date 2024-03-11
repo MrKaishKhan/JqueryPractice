@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+ 
+<head>
+<style>
+
+.outer{
+    background-color: blueviolet;
+    width: 600px;
+    height: 300px;
+     
+}
+.outerdown{
+    background-color: palegreen;
+    width: 500px;
+    height: 250px;
+    
+
+}
+.inner{
+    background-color: yellow;
+    width: 350px;
+    height: 200px;
+    
+
+}
+
+/* .{
+    background-color: red;
+} */
+
+
+</style>
+</head>
+<div class="main">
+
+        <div class="outerdown">
+            <h2>Outer Down</h2>
+            <div class="inner">
+                <h2>Inner</h2>
+                <div class="a">A</div>
+                <div class="b">B</div>
+            <div class="child-c">C</div>
+            <div class="d">D</div>
+        </div>
+    </div>
+</div>
+    
+
+<script>
+     
+    $(document).ready(function(){
+    //    $(".child-c").siblings("h2").css("background-color", "blue");
+       //next methods
+    //    $(".child-c").next().css("background-color", "blue");
+       $(".a").nextUntil(".d").css("background-color", "blue");
+       //previous methods 
+       // prev prevAll preUntil
+    //    $(".child-c").prev().css("background-color", "blue");
+        
+    });
+</script>
+<body>
+</body>
+</html> 
