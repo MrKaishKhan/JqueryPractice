@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+ 
+<head>
+<style>
+
+.first{
+    background-color: aquamarine;
+}
+
+.sec{
+    background-color:cadetblue;
+}
+</style>
+</head>
+
+<h1>has</h1>
+<div class="first">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro, labore maxime, officiis nihil placeat eius nemo libero aperiam totam sequi facilis autem. Odit molestiae ut repudiandae, explicabo quos optio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro, labore maxime, officiis nihil placeat eius nemo libero aperiam totam sequi facilis autem. Odit molestiae ut repudiandae, explicabo quos optio.</p>
+</div>
+<ul>
+    <li>orange</li>
+    <li><span>orange</span></li>
+    <li>orange</li>
+    <li>orange</li>
+</ul>
+<div class="sec">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quam? Enim, ratione odio laboriosam quisquam eaque voluptatem pariatur, possimus dicta assumenda est debitis quidem! Placeat cupiditate rem minima facilis ipsa.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo omnis reprehenderit ullam cum corrupti porro?ssumenda est debitis quidem! Placeat cupiditate rem minima facilis ipsa.</p>
+</div>
+    
+
+<script>
+     
+    $(document).ready(function(){
+    //   $("ul li ").has("span ").css("background-color", "red")
+
+      // is methos = this will be only work with if() 
+      $("p").click(function(){
+        if($(this).parent().is("div")){
+         console.log($(" p").parent().is("div"))
+     }
+      }) 
+    });
+</script>
+<body>
+</body>
+</html> 
