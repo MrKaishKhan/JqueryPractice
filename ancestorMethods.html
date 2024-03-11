@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+ 
+<head>
+<style>
+
+.outer{
+    background-color: blueviolet;
+    width: 600px;
+    height: 300px;
+     
+}
+.outerdown{
+    background-color: palegreen;
+    width: 500px;
+    height: 250px;
+    
+
+}
+.inner{
+    background-color: yellow;
+    width: 350px;
+    height: 200px;
+    
+
+}
+
+/* .{
+    background-color: red;
+} */
+
+
+</style>
+</head>
+<div class="main">
+    <div class="outer">
+        <h2>Outer Mains</h2>
+        <div class="outerdown">
+            <h2>Outer Down</h2>
+            <div class="inner">
+                <h2>Inner</h2>
+                <div class="a">A</div>
+                <div class="b">B</div>
+            <div class="child-c">C</div>
+            <div class="d">D</div>
+        </div>
+        </div>
+    </div>
+</div>
+    
+
+<script>
+     
+    $(document).ready(function(){
+       // parent can be use for one parent traget 
+      // parents can be used for all the parents off..
+        // $(".child-c").parent().css("background", "purple");
+        $(".child-c").parent().css("background", "purple");
+        // $(".child-c").parents(".outer").css("background", "red");
+        // ParentUntil 
+        // $(".child-c").parentsUntil(".outer").css("background", "red");
+        // offsetParent 
+        $(".child-c").offsetParent(".outer").css("background", "red");
+        // closest 
+        $(".child-c").closest(".outer").css("background", "red");
+        
+    });
+</script>
+<body>
+</body>
+</html> 
