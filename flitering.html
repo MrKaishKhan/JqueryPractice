@@ -11,60 +11,44 @@
 <head>
 <style>
 
-.outer{
-    background-color: blueviolet;
-    width: 600px;
-    height: 300px;
-     
-}
-.outerdown{
-    background-color: palegreen;
-    width: 500px;
-    height: 250px;
-    
-
-}
-.inner{
-    background-color: yellow;
-    width: 350px;
-    height: 200px;
-    
-
+.first{
+    background-color: aquamarine;
 }
 
-/* .{
-    background-color: red;
-} */
-
-
+.sec{
+    background-color:cadetblue;
+}
 </style>
 </head>
-<div class="main">
 
-        <div class="outerdown">
-            <h2>Outer Down</h2>
-            <div class="inner">
-                <h2>Inner</h2>
-                <div class="a">A</div>
-                <div class="b">B</div>
-            <div class="child-c">C</div>
-            <div class="d">D</div>
-        </div>
-    </div>
+<h1>Flitering</h1>
+<div class="first">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro, labore maxime, officiis nihil placeat eius nemo libero aperiam totam sequi facilis autem. Odit molestiae ut repudiandae, explicabo quos optio.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At porro, labore maxime, officiis nihil placeat eius nemo libero aperiam totam sequi facilis autem. Odit molestiae ut repudiandae, explicabo quos optio.</p>
+</div>
+<ul>
+    <li>orange</li>
+    <li>orange</li>
+    <li>orange</li>
+    <li>orange</li>
+</ul>
+<div class="sec">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, quam? Enim, ratione odio laboriosam quisquam eaque voluptatem pariatur, possimus dicta assumenda est debitis quidem! Placeat cupiditate rem minima facilis ipsa.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo omnis reprehenderit ullam cum corrupti porro?ssumenda est debitis quidem! Placeat cupiditate rem minima facilis ipsa.</p>
 </div>
     
 
 <script>
      
     $(document).ready(function(){
-    //    $(".child-c").siblings("h2").css("background-color", "blue");
-       //next methods
-    //    $(".child-c").next().css("background-color", "blue");
-       $(".a").nextUntil(".d").css("background-color", "blue");
-       //previous methods 
-       // prev prevAll preUntil
-    //    $(".child-c").prev().css("background-color", "blue");
-        
+        //first methos
+    //  $("p").first().css("background-color","gray");
+     // last methos
+     //  $("p").last().css("background-color","gray");
+     // equivalent methos
+    //  $("p").eq(2).css("background-color","gray");
+      // slice
+     $("ul li").slice(1 ,3).css("background-color","gray");
     });
 </script>
 <body>
