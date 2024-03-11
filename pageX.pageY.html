@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="./style/style.css"> -->
+
+<style>
+
+.mouse{
+    border: 1px solid rgb(136, 99, 171);
+    width:500px;
+    height: 300px;
+    background-color: blueviolet;
+}
+
+.violet{
+
+    background-color :blueviolet;
+}
+
+.box{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 100px;
+}
+</style>
+
+</head>
+<body>
+    <h1> This is me and me ?</h1>
+    
+
+        <div class="mouse">
+            
+        </div>
+        <div class="box"></div>
+    <script>
+   $(document).ready(function(){
+   $(document).mouseover(function(event){
+     $(".mouse").text("X:  " + event.pageX + "  Y: "  + event.pageY);
+     let x = event.pageX;
+     let y = event.pageY;
+  
+     $(".box").offset({top:y, left:x});
+
+   })     
+})
+
+    </script>
+</body>
+
+</html>  
