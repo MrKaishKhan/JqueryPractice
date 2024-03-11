@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style/style.css">
+ 
+<head>
+<style>
+
+.first{
+    background-color: aquamarine;
+}
+
+.sec{
+    background-color:cadetblue;
+}
+</style>
+</head>
+
+<h1>each</h1>
+
+<ul>
+    <li>orange</li>
+    <li><span>orange</span></li>
+    <li>orange</li>
+    <li>orange</li>
+</ul>
+
+
+<script>
+     
+    $(document).ready(function(){
+     $("li").each(function(){
+       console.log($(this).text());
+     })
+    });
+</script>
+<body>
+</body>
+</html>  
