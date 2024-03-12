@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="./style/style.css"> -->
+
+<style>
+
+</style>
+
+</head>
+<body>
+    <h1> This is me and me ?</h1>
+    
+
+        <div class="top">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, distinctio rem quas quidem maxime saepe reiciendis dicta similique quam. Dolor quas labore vero sunt doloremque laudantium quia reprehenderit suscipit quos.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, distinctio rem quas quidem maxime saepe reiciendis dicta similique quam. Dolor quas labore vero sunt doloremque laudantium quia reprehenderit suscipit quos.</p><br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, distinctio rem quas quidem maxime saepe reiciendis dicta similique quam. Dolor quas labore vero sunt doloremque laudantium quia reprehenderit suscipit quos.</p>
+        </div>
+        <br>
+        <h3></h3>
+     
+
+
+    <script>
+   $(document).ready(function(){
+   $("p").each(function(i){
+    $(this).on("click" ,{value:i},function(event){
+        alert(event.data.value) 
+
+    })
+   })    
+    
+})
+
+    </script>
+</body>
+
+</html>  

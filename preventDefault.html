@@ -34,10 +34,9 @@
     <h1> This is me and me ?</h1>
     
 
-        <div class="mouse">
-          <h1>THsi </h1> 
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ducimus quidem inventore in officiis ad aperiam veritatis ipsum, architecto qui possimus dignissimos culpa adipisci perferendis, ullam enim nesciunt neque harum?</p>
-          <button>Test</button> 
+        <div class="mous">
+          <a href="https://github.com/MrKaishKhan" class="result">Hide</a> 
+          <a href="https://github.com/MrKaishKhan" class="">Open</a> 
         </div>
         <br>
         <h3></h3>
@@ -46,13 +45,14 @@
 
     <script>
    $(document).ready(function(){
-    $(".mouse").on(" mouseover" ,function(event){
-        // event.target = show you the valuse of the element
-        // $("h3").html("target : "  + event.target);
-        // event.target.nodeName = show you the valuse of the element tag
-        $("h3").html("target : "  + event.target.nodeName);
+    $(".result").click(function(){
+        event.preventDefault();
+
+        let a = event.isDefaultPrevented();
+        $("h3").html(a);
 
     })
+    
 })
 
     </script>
